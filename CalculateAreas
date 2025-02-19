@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class calculate_areas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //Area of circle
+
+        System.out.print("Enter the radius of the circle: ");
+        double radius = scanner.nextDouble();
+        double area = Math.PI * radius * radius;
+        System.out.println("The area of the circle is: " + area);
+        System.out.println();
+
+        //Area of triangle
+
+        System.out.println("=======================================");
+        System.out.println();
+        System.out.print("Enter the base of the triangle: ");
+        double base = scanner.nextDouble();
+        System.out.print("Enter the height of the triangle: ");
+        double height = scanner.nextDouble();
+        double area1 = 0.5 * base * height;
+        System.out.println("The area of the triangle is: " + area1);
+        System.out.println();
+
+        //area of rectangle
+
+        System.out.println("=========================================");
+        System.out.println();
+        System.out.print("Enter the length of the rectangle: ");
+        double length = scanner.nextDouble();
+        System.out.print("Enter the width of the rectangle: ");
+        double width = scanner.nextDouble();
+        double area2 = length * width;
+        System.out.println("The area of the rectangle is: " + area2);
+        System.out.println();
+
+        //area of isosceles triangle
+
+        System.out.println("============================================");
+        System.out.println();
+        System.out.print("Enter the base of the isosceles triangle: ");
+        double base1 = scanner.nextDouble();
+        System.out.print("Enter the length of the equal side: ");
+        double side = scanner.nextDouble();
+        double height1 = Math.sqrt((side * side) - (base1 * base1) / 4);
+        double area3 = 0.5 * base1 * height1;
+        System.out.println("The area of the isosceles triangle is: " + area3);
+        System.out.println();
+
+        //area of parallelogram
+
+        System.out.println("===================================================");
+        System.out.println();
+        System.out.print("Enter the base of the parallelogram: ");
+        double base2 = scanner.nextDouble();
+        System.out.print("Enter the height of the parallelogram: ");
+        double height2 = scanner.nextDouble();
+        double area4 = base2 * height2;
+        System.out.println("The area of the parallelogram is: " + area4);
+        System.out.println();
+
+        //area of rhombus
+
+        System.out.println("=============================================");
+        System.out.println();
+        System.out.print("Enter the first diagonal of the rhombus: ");
+        double d1 = scanner.nextDouble();
+        System.out.print("Enter the second diagonal of the rhombus: ");
+        double d2 = scanner.nextDouble();
+        double area5 = (d1 * d2) / 2;
+        System.out.println("The area of the rhombus is: " + area5);
+        System.out.println();
+
+        //area of equilateral triangle
+
+        System.out.println("===============================================");
+        System.out.println();
+        System.out.print("Enter the side length of the equilateral triangle: ");
+        double side1 = scanner.nextDouble();
+        double area6 = (Math.sqrt(3) / 4) * (side1 * side1);
+        System.out.println("The area of the equilateral triangle is: " + area6);
+
+    }
+}
