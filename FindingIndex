@@ -1,0 +1,24 @@
+/*output:
+Enter a number:1234
+Enter a digit:2
+2 is at index of 1
+*/
+import java.util.Scanner;
+public class finding_index {
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int a=scan.nextInt();
+        System.out.print("Enter a digit:");
+        int b=scan.nextInt();
+        String num=Integer.toString(a);
+        char ch=Character.forDigit(b,10);
+        for(int i=0;i<num.length();i++){
+            if(num.charAt(i)==ch){
+                System.out.println(b+" is at index of "+i);
+            }
+        }
+
+    }
+
+}
