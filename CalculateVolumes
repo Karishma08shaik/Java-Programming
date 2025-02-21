@@ -1,0 +1,66 @@
+import java.util.Scanner;
+public class CalculateVolumes {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        //volume of cone
+        //Formula for Volume of a Cone:𝑉 = 1/3 𝜋 𝑟^2 ℎ
+        
+        System.out.print("Enter the radius of the cone: ");
+        double radius = scanner.nextDouble();
+        System.out.print("Enter the height of the cone: ");
+        double height = scanner.nextDouble();
+        double volume = (1.0 / 3) * Math.PI * Math.pow(radius, 2) * height;
+        System.out.println("The volume of the cone is: " + volume);
+        System.out.println();
+        
+        //volume of prism
+        //Formula for Volume of a Prism:𝑉 = BaseArea×Height
+        
+        System.out.println("==========================================");
+        System.out.println();
+        System.out.print("Enter the base area of the prism: ");
+        double baseArea = scanner.nextDouble();
+        System.out.print("Enter the height of the prism: ");
+        double height1 = scanner.nextDouble();
+        double volume1 = baseArea * height1;
+        System.out.println("The volume of the prism is: " + volume1);
+        System.out.println();
+        
+        //volume of cylinder
+        //Formula for Volume of a Cylinder:𝑉 =𝜋 𝑟^2 ℎ
+        
+        System.out.println("===================================================");
+        System.out.println();
+        System.out.print("Enter the radius of the cylinder: ");
+        double radius1 = scanner.nextDouble();
+        System.out.print("Enter the height of the cylinder: ");
+        double height2 = scanner.nextDouble();
+        double volume2 = Math.PI * Math.pow(radius1, 2) * height2;
+        System.out.println("The volume of the cylinder is: " + volume2);
+        System.out.println();
+        
+        //volume of sphere
+        // Formula for Volume of a Sphere:𝑉=4/3𝜋𝑟^2
+        
+        System.out.println("====================================================");
+        System.out.println();
+        System.out.print("Enter the radius of the sphere: ");
+        double radius2 = scanner.nextDouble();
+        double volume3 = (4.0 / 3) * Math.PI * Math.pow(radius2, 3);
+        System.out.println("The volume of the sphere is: " + volume3);
+        System.out.println();
+        
+        //volume of pyramid
+        //Formula for Volume of a Pyramid:𝑉=13×BaseArea×Height
+        
+        System.out.println("==================================================");
+        System.out.println();
+        System.out.print("Enter the base area of the pyramid: ");
+        double baseArea1 = scanner.nextDouble();
+        System.out.print("Enter the height of the pyramid: ");
+        double height3 = scanner.nextDouble();
+        double volume4 = (1.0 / 3) * baseArea1 * height3;
+        System.out.println("The volume of the pyramid is: " + volume4);
+    }
+}
