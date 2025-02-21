@@ -1,0 +1,42 @@
+import java.util.*;
+public class Swapping_of_two_numbers{
+    public static void main (String[]args){
+
+     //swapping of two numbers method1
+
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter a value :");
+        int a=scanner.nextInt();
+        Scanner scanner1=new Scanner(System.in);
+        System.out.print("Enter b value :");
+        int b=scanner1.nextInt();
+        System.out.println("Before swapping: a = "+ a +" b = "+b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("After swapping: a = "+ a +" b = "+b);
+
+        //swapping of two numbers method2
+
+        int a=20;
+        int b=40;
+        System.out.println("Before swapping: a = "+ a +" b = "+b);
+        int temp=a;
+        a=b;
+        b=temp;
+        System.out.println("After swapping: a = "+ a +" b = "+b);
+
+        //swapping of two numbers method3
+
+        System.out.print("Enter a value :");
+        int a=scanner.nextInt();
+        Scanner scanner1=new Scanner(System.in);
+        System.out.print("Enter b value :");
+        int b=scanner1.nextInt();
+        System.out.println("Before swapping: a = "+ a +" b = "+b);
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        System.out.println("After swapping: a = "+ a +" b = "+b);
+    }
+}
