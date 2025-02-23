@@ -1,0 +1,13 @@
+/*Formula for Total Surface Area of a Cube:
+TotalSurfaceArea=6×(Side^2)*/
+import java.util.Scanner;
+
+public class Total_Surface_Area_of_a_Cube {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the side length of the cube: ");
+        double side = scanner.nextDouble();
+        double surfaceArea = 6 * Math.pow(side, 2);
+        System.out.println("Total Surface Area of the Cube: " + surfaceArea);
+    }
+}
