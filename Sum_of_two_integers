@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class SumOfTwoIntegers {
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter First number: ");
+        int a=scan.nextInt();
+        System.out.print("Enter second number: ");
+        int b=scan.nextInt();
+        System.out.println("Sum of two integers:"+(a+b));
+
+    }
+}
