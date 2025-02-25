@@ -1,0 +1,12 @@
+public class Print_numbers_from_1_to_100_without_using_loops {
+    static void recursion(int n){
+        if(n>100){
+            return;
+        }
+        System.out.print(n+" ");
+          recursion(n+1);
+    }
+    public static void main(String[]args){
+        recursion(1);
+    }
+}
