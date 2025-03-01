@@ -1,0 +1,27 @@
+/* Output:-
+* Enter first number:12
+* Enter second number:18
+* GCD of 12 and 18 is:6
+* LCM of 122 and 18 is: 16*/
+import java.util.Scanner;
+public class find_the_GCD_and_LCM_of_two_numbers {
+    public static int findGCD(int a, int b){
+        while (b!=0){
+            int temp=b;
+            b=a%b;
+            a=temp;
+        }
+        return a;
+    }
+    public static void main(String[]args){
+        Scanner scan= new Scanner(System.in);
+        System.out.print("Enter first number:");
+        int num1= scan.nextInt();
+        System.out.print("Enter second number:");
+        int num2=scan.nextInt();
+        int gcd =findGCD(num1,num2);
+        int lcm=(num1*num2)/gcd;
+        System.out.println("GCD of "+num1+" and "+num2+" is :"+gcd);
+        System.out.println("LCM of "+num1+" and "+num2+" is :"+lcm);
+    }
+}
