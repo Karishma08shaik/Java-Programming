@@ -1,0 +1,17 @@
+/* Enter a string: abcdef123@
+* output is: 123*/
+import java.util.Scanner;
+public class Numbers_From_given_string {
+    public static void main(String[]args){
+    Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a String: ");
+    String s=scan.nextLine();
+    StringBuilder st = new StringBuilder();
+        for(char ch:s.toCharArray()){
+        if(ch>=48 && ch<=57){
+            st.append(ch);
+        }
+    }
+        System.out.println("output is: "+st.toString());
+}
+}
