@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Extract_alphabets_from_a_Given_string {
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a String: ");
+        String s=scan.nextLine();
+        StringBuilder st = new StringBuilder();
+        for(char ch:s.toCharArray()){
+            if(ch>=97 && ch<=122){
+                st.append(ch);
+            }
+        }
+        System.out.println("output is: "+st.toString());
+    }
+}
