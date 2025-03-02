@@ -1,0 +1,18 @@
+/* Enter a String: abcdef$@123
+* output is: $@ */
+import java.util.Scanner;
+
+public class Special_character_from_given_string {
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a String: ");
+        String s=scan.nextLine();
+        StringBuilder st = new StringBuilder();
+        for(char ch:s.toCharArray()){
+            if(ch>=33 && ch<=47 || ch>=58 && ch<=64|| (ch >= 91 && ch <= 96) || (ch >= 123 && ch <= 126)){
+                st.append(ch);
+            }
+        }
+        System.out.println("output is: "+st.toString());
+    }
+}
