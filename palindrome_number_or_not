@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class palindrome_number_or_not {
+    public static void main(String[]args){
+        int result=0;
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number=scan.nextInt();
+        int temp=number;
+        if(temp!=0){
+            int s=temp%10;
+            result=result*10+s;
+            temp=temp/10;
+            System.out.println(number+" is a palindrome number");
+        }
+        else{
+            System.out.println(number+" is not a palindrome number");
+        }
+    }
+}
