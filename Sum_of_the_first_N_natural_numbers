@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Sum_of_the_first_N_natural_numbers {
+    public static void main(String[]args){
+        Scanner scan=new  Scanner(System.in);
+        System.out.print("Enter your number: ");
+        int number=scan.nextInt();
+        int sum=(number*(number+1))/2;
+        System.out.println("Sum of "+number+" natural numbers "+ sum);
+    }
+}
