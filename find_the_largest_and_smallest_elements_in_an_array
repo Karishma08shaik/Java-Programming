@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class find_the_largest_and_smallest_elements_in_an_array {
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter number of elements in the array: ");
+        int n=scan.nextInt();
+        int[] array=new int[n];
+        System.out.print("Enter "+n+" numbers: ");
+        for(int i=0;i<n;i++){
+            array[i]=scan.nextInt();
+        }
+        int smallest=array[0];
+        int largest=array[0];
+        for(int i=1;i<n;i++){
+            if(array[i]<smallest){
+                smallest=array[i];
+            } else if (array[i]>largest) {
+                largest=array[i];
+            }
+        }
+        System.out.println("Smallest Element is: "+smallest);
+        System.out.println("Largest Element is: "+largest);
+    }
+}
