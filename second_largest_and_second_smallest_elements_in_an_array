@@ -1,0 +1,17 @@
+import java .util.*;
+public class second_largest_and_second_smallest_elements_in_an_array {
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter size of the array: ");
+        int size=scan.nextInt();
+        System.out.println("Enter "+size+" elements");
+        int[] array=new int[size];
+        for(int i=0;i<size;i++){
+            array[i]=scan.nextInt();
+        }
+        Arrays.sort(array);
+        System.out.println("second smallest element is: "+array[1]);
+        System.out.println("second largest element is: "+array[size-2]);
+    }
+
+}
